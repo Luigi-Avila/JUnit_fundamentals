@@ -2,6 +2,7 @@ package com.luigidev.junitfundamentals
 
 import org.junit.Assert.*
 import org.junit.Test
+import kotlin.random.Random
 
 class AssertionsTest {
 
@@ -62,5 +63,12 @@ class AssertionsTest {
         val copyLuigi = luigi
         //This validate the object's reference
         assertSame(copyLuigi, luigi)
+    }
+
+    @Test(timeout = 1_000)
+    fun getCountriesTest(){
+        val countries = arrayOf("Mexico", "USA", "Brazil", "Argentina")
+        Thread.sleep(Random.nextLong(200, 1_050))
+        assertEquals(4, countries.size)
     }
 }
