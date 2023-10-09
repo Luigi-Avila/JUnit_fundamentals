@@ -61,6 +61,6 @@ class AssertionsTest {
         val luigi = User("Luigi", 23, true)
         val copyLuigi = luigi
         //This validate the object's reference
-        assertSame(copyLuigi, luigi)
+        assertSame(bot, luigi)
     }
 }
