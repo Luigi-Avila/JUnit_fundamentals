@@ -28,9 +28,9 @@ class AssertionsTest {
     fun checkHumanTest() {
         val assertions = Assertions()
         val bot = User("8bits", 1, false)
-        val juan = User("Juan", 18, true)
+        val luigi = User("Luigi", 18, true)
         assertFalse(assertions.checkHuman(bot))
-        assertTrue(assertions.checkHuman(juan))
+        assertTrue(assertions.checkHuman(luigi))
     }
 
     @Test
