@@ -47,4 +47,20 @@ class AssertionsTest {
         val assertions = Assertions()
         assertNotNull(assertions.checkHuman(user))
     }
+
+    @Test
+    fun checkNotSameUsersTest(){
+        val bot = User("8bit", 1, false)
+        val luigi = User("Luigi", 23, true)
+        assertNotSame(bot, luigi)
+    }
+
+    @Test
+    fun checkSameUsersTest(){
+        val bot = User("Luigi", 23, true)
+        val luigi = User("Luigi", 23, true)
+        val copyLuigi = luigi
+        //This validate the object's reference
+        assertSame(copyLuigi, luigi)
+    }
 }
