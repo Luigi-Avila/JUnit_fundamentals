@@ -9,6 +9,7 @@ class AssertionsTest{
     fun getLuckyNumberTest(){
         val assertions = Assertions()
         val array = arrayOf(21, 117) // Expected values
-        assertArrayEquals(array, assertions.getLuckyNumber())
+        //val array = arrayOf(21, 117) // run this to view the custom message
+        assertArrayEquals("Custom message for testing ",array, assertions.getLuckyNumber())
     }
 }
