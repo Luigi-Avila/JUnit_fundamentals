@@ -1,7 +1,7 @@
 package com.luigidev.junitfundamentals
 
 class Assertions {
-    private val user = User("Lugi", 23)
+    private val user = User("Luigi", 23)
 
     fun getLuckyNumber(): Array<Int>{
         return arrayOf(21,117)
